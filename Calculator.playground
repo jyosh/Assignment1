@@ -1,0 +1,12 @@
+import UIKit
+
+enum operation{
+    case add
+    case subtract
+    case multiply
+    case divide
+}
+func calculator( a:Int,op:operation,b:Int )->Int{
+   return 0
+}
+calculator(a: 20, op:operation.add, b: 20)
