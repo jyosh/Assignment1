@@ -1,0 +1,22 @@
+import Foundation
+
+enum operation{
+    case add
+    case subtract
+    case multiply
+    case divide
+}
+
+func calculator( a:Int,op:operation,b:Int )->Int{
+    switch(op) {
+        case operation.add:
+            return a + b;
+        case operation.subtract:
+            return a - b;
+        case operation.multiply:
+            return a * b;
+        case operation.divide:
+            return 0 == b ? 0 : a / b;
+    }
+}
+print(calculator(a: 0, op:operation.subtract, b: 10))
