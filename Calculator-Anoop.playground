@@ -16,8 +16,8 @@ func calculator(a:Int,op:operation,b:Int)->Int{
     case operation.multiply:
         return a * b;
     case operation.divide:
-        return a / b;
+        return b != 0 ? a / b : 0;
     }
     
 }
-calculator(a: 20, op:operation.multiply, b: 20)
+calculator(a: 20, op:operation.divide, b: 0)
